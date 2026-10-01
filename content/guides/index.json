@@ -26,6 +26,8 @@
     "region": "江苏·盐城东台市",
     "site": "条子泥湿地（含 720 高地等公开观察点，具体边界待核验）",
     "site_type": "滨海潮间带湿地/世界自然遗产地组成部分",
+    "master_source": "js-dongtai-tiaozini.json",
+    "html_generated_by": "scripts/render-guide.mjs",
     "months": [4, 5, 6, 9, 10, 11, 12],
     "best_time_of_day": "涨潮前后作为观察逻辑；准确潮窗待核验",
     "difficulty": "进阶（需确认开放安排）",

@@ -17,6 +17,14 @@ description: 以公开来源、时效字段和审核契约为基础，批量生�
 - 首批建议 3 篇试产；生成前写明目标读者、适用季节、预计篇数、待核验字段和风险。
 - 状态流转：`queued → researching → drafted → fact_check → ready_for_review → approved → published`；有关键缺口进入 `blocked`。
 
+### 1.1 生成前拆解（必须先做）
+
+在写正文或 HTML 前，先把任务拆成一条机器可读的生成计划。计划至少包含：
+
+`article_id | audience | season_window | canonical_place | open_boundary | route_stops | timeline | habitat_questions | target_taxa | live_fields | safety_gates | source_gaps`
+
+每一项都要有 `known`、`unknown` 或 `needs_review` 状态。先拆解再写作可以把“生态解释”“可执行路线”和“当天需要确认的条件”分开，避免把历史报道写成当前承诺。生成计划应保存为文章母版的一部分，成为后续 HTML、QA 和回归测试的输入。
+
 ## 2. 资料采集与证据
 
 只采集可公开访问的页面、法规、论文、公开数据库或公开报道。优先顺序：管理部门/保护区官方页面；国家或省市政府及林草部门；同行评审论文和鸟类学/自然教育机构；有作者和日期的媒体报道。搜索摘要只能做线索。
@@ -24,6 +32,10 @@ description: 以公开来源、时效字段和审核契约为基础，批量生�
 每个关键字段建立证据记录：
 
 `field | claim | source_url | source_type | source_date | retrieved_at | valid_until | excerpt | confidence | needs_review`
+
+### 2.1 证据表契约
+
+证据表是每个关键断言的唯一依据。`conditions`、`route`、`targets` 和 `safety` 中的事实性字段必须引用 `source_ids`，并能在 `sources` 表中找到完整记录。`source_date`、`retrieved_at`、`valid_until`、`confidence` 和 `needs_review` 不能省略；不适用时写明确的 `static` 或 `出行前复核`，不能留空。来源 URL 必须使用 `https://`，版权字段写清“公开网页，仅链接引用”或来源许可。
 
 每篇攻略至少使用两类来源交叉验证，且在来源表中写出冲突处理：
 
@@ -60,6 +72,19 @@ description: 以公开来源、时效字段和审核契约为基础，批量生�
 ```
 
 未知值写 `unknown` 或 `待核验`，不要用常识补数字。实时字段（开放时间、预约、交通接驳、门票、潮汐、天气、当天鸟讯）必须同时写状态、来源、检索日期和有效期；过期来源不能支撑当前承诺。
+
+### 3.1 结构化路线与时间线
+
+母版必须包含以下数组或对象，并由 HTML 渲染器直接消费：
+
+- `route.preflight`：出发前核验顺序；
+- `route.stops`：只列公开或“若当天开放”的观察点，每站写观察目标、边界和证据；
+- `timeline`：用相对顺序描述半日/一日节奏，不虚构班次、潮位或分钟级时长；
+- `habitats`：生境、潮线/水位关系及可观察行为；
+- `targets`：鸟种或类群按证据等级分组，区分历史、季节性和当天鸟讯；
+- `conditions`：开放、预约、交通、潮汐、天气、费用和鸟讯等时效字段。
+
+HTML 只能从母版生成，不能手工维护同一事实的第二份副本。页面必须输出 `data-section="decision|conditions|route|timeline|habitats|targets|safety|sources"` 八个语义区块，并嵌入原始母版快照，方便审计和回归。
 
 ## 4. 叙事与正文结构
 
@@ -98,5 +123,20 @@ description: 以公开来源、时效字段和审核契约为基础，批量生�
 - **生态与合规**：不泄露敏感点位、不诱导接近鸟群、不提供绕过管理的建议。
 - **内容质量**：每篇有地点独特信息；标题、路线、鸟种说明和装备建议没有机械复制。
 - **机器验收**：`index.json` 可解析，`article_id/slug` 唯一，来源 URL 为 `https://`，必填字段不为空；页面卡片和详情状态一致。
+
+### 7.1 四层 QA 与 90% 母版指标
+
+每次生成按四层记录结果，任何关键层失败都只能保持 `待核验` 或 `blocked`：
+
+1. **Schema/证据层**：JSON 可解析、字段完整、来源 ID 可回链、时效字段齐全、来源 URL 为 HTTPS。
+2. **语义/结构层**：八个 `data-section` 全部存在；`decision`、`route`、`timeline`、`habitats`、`targets` 和 `safety` 有实际内容；路线不包含禁入或绕行指引。
+3. **静态/交互层**：HTML 标签闭合、页面标题/`article_id`/状态一致、来源链接可见、移动端表格可滚动、页面无脚本错误。
+4. **编辑/安全层**：至少两类来源、历史记录与当天鸟讯分离、版权声明完整、敏感坐标和诱导性承诺清零；抽样人工复核并记录人和日期。
+
+母版 90% 指标用于回归门槛：八个语义区块齐全（8/8）、关键时效字段有完整五元组（状态/来源/来源日期/检索日期/有效期，≥90%）、事实性条目可回链（≥90%）、四层 QA 有结果（4/4）、安全禁词命中为 0。低于门槛不得标记 `approved/published`。
+
+### 7.2 回归 fixture 与自优化闭环
+
+为每篇稳定母版保存 `tests/fixtures/<article_id>.json`，至少固定 `article_id`、预期语义区块、关键字段数量、来源类别数量和 90% 指标。生成后先跑 fixture，再跑四层 QA；失败项写入 `qa.review_notes`，修复后重新生成。每次人工复核把“缺口类型 → 修复动作 → 新断言”追加到 fixture 或检查器，形成可重复的自优化闭环，而不是靠一次性目测。
 
 验收输出格式：`article_id | passed_checks | failed_checks | unrun_checks | reviewer | reviewed_at | next_action`。任何关键事实缺口、单来源、时效缺失或合规风险都不得进入 `approved/published`。

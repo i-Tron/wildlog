@@ -1,5 +1,7 @@
 # 东台条子泥｜跟着潮线理解 720 高地
 
+> **母版与生成**：本篇的机器可读母版是 [`js-dongtai-tiaozini.json`](./js-dongtai-tiaozini.json)，详情页 [`js-dongtai-tiaozini.html`](./js-dongtai-tiaozini.html) 由 `scripts/render-guide.mjs` 生成。修改事实时先更新 JSON/本 Markdown，再重新生成并运行四层 QA。
+
 > **摘要**：条子泥适合用“潮水如何改变鸟的空间”来组织观察，而不是追逐某一只明星鸟。本稿摘录公开的政府与林草部门资料，只提供开放观察的叙事骨架；720 高地、川水湾、万亩湖泊等点位的当日开放边界、接驳和潮位仍须核验。
 
 - **article_id**：`js-dongtai-tiaozini`

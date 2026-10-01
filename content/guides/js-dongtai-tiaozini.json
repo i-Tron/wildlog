@@ -1,0 +1,81 @@
+{
+  "schema_version": "1.1",
+  "article_id": "js-dongtai-tiaozini",
+  "slug": "jiangsu-dongtai-tiaozini",
+  "title": "东台条子泥｜跟着潮线理解 720 高地",
+  "region": "江苏·盐城东台市",
+  "site": "条子泥湿地（含 720 高地等公开观察点，具体边界待核验）",
+  "site_type": "滨海潮间带湿地/世界自然遗产地组成部分",
+  "summary": "把潮水、鸟群和开放边界放在同一张图上理解条子泥；本稿适合愿意先核验再出发的观鸟者。",
+  "status": "待核验",
+  "last_checked_at": "2026-10-01",
+  "next_review_at": "2026-11-01",
+  "freshness_class": "seasonal",
+  "copyright": "原创编辑整理；来源链接仅作引用，未复制来源全文或图片；不得将本页文字或来源图片用于商业再发布。",
+  "location": {
+    "canonical_name": "东台条子泥湿地",
+    "aliases": ["条子泥", "东台黄海湿地条子泥"],
+    "administrative_area": "江苏省盐城市东台市",
+    "coordinate_policy": "不公开敏感巢址、夜栖点或可绕过管制的精确坐标"
+  },
+  "decision": {
+    "audience": "已经会用望远镜、能接受风大和开阔滩涂环境，并愿意按管理方边界行动的观鸟者。",
+    "months": [4, 5, 6, 9, 10, 11, 12],
+    "season_note": "春季可关注繁殖与北迁线索，秋冬可关注南迁和越冬背景；具体日期受潮汐、天气、管理和鸟群变化影响。",
+    "best_time_of_day": "以当天潮汐和管理方安排为准；涨潮前后只作为观察逻辑，不替代潮汐表。",
+    "difficulty": "进阶（需确认开放安排）",
+    "duration": "半日到一日；不承诺固定班次或分钟级时长。",
+    "value": "条子泥适合用“潮水如何改变鸟的空间”来组织观察，而不是追逐某一只明星鸟。",
+    "go_no_go": [
+      "开放边界、预约/接驳、潮汐、天气和撤离条件中有一项未确认，就把行程降级为资料学习或取消。",
+      "当天不得把历史记录、媒体报道或旧路线当作必见鸟种、当前入口或实时班次。"
+    ]
+  },
+  "conditions": [
+    {"id":"open_scope","label":"公开入口与观察平台","value":"720 高地、观鸟平台、川水湾等名称见公开资料，但当前可进入边界未确认。","status":"待核验","source_ids":["forestry-gov-2026-01-08","mee-2021-09-06"],"source_date":"2026-01-08","retrieved_at":"2026-10-01","valid_until":"出行前复核","confidence":"medium","needs_review":true},
+    {"id":"hours_reservation","label":"开放时间、预约与接驳","value":"未取得可验证的当日公告。","status":"待核验","source_ids":[],"source_date":"2026-10-01","retrieved_at":"2026-10-01","valid_until":"每次出行前","confidence":"low","needs_review":true},
+    {"id":"tide","label":"潮汐窗口","value":"未提供准确潮窗；公开报道只解释涨潮时鸟群转移逻辑。","status":"待核验","source_ids":["forestry-gov-2026-01-08"],"source_date":"2026-01-08","retrieved_at":"2026-10-01","valid_until":"按日期与具体地点复核","confidence":"low","needs_review":true},
+    {"id":"transport","label":"交通、停车与步行","value":"未确认；不采用私人行程或旧攻略中的班次。","status":"待核验","source_ids":[],"source_date":"2026-10-01","retrieved_at":"2026-10-01","valid_until":"每次出行前","confidence":"low","needs_review":true},
+    {"id":"weather","label":"天气与撤离","value":"海堤、潮滩、风口和水沟有失足、涨潮、风雨与能见度变化风险。","status":"需现场判断","source_ids":["wetland-law-2021"],"source_date":"2021-12-27","retrieved_at":"2026-10-01","valid_until":"每次出行前及现场","confidence":"medium","needs_review":true},
+    {"id":"bird_news","label":"当天鸟讯","value":"本稿没有实时鸟讯接口；历史/季节性记录不代表当天可见。","status":"待核验","source_ids":["yancheng-gov-2026-05-09","dongtai-gov-2026-04-17"],"source_date":"2026-05-09","retrieved_at":"2026-10-01","valid_until":"当天鸟讯需另行取得带日期公开记录","confidence":"medium","needs_review":true},
+    {"id":"fee_service","label":"门票与服务","value":"未找到稳定、当前的官方票务字段。","status":"待核验","source_ids":[],"source_date":"2026-10-01","retrieved_at":"2026-10-01","valid_until":"每次出行前","confidence":"low","needs_review":true}
+  ],
+  "route": {
+    "preflight": [
+      {"step":1,"action":"查当天开放公告、预约/接驳、潮汐、天气和撤离提示；缺一项就不把路线当作已开放行程。","evidence_ids":["forestry-gov-2026-01-08","wetland-law-2021"]},
+      {"step":2,"action":"确认到达后只使用管理方指定入口、平台和工作人员允许的观察范围。","evidence_ids":["mee-2021-09-06"]},
+      {"step":3,"action":"准备望远镜、防风防晒外层、防滑鞋、饮水和充电；不带诱鸟音、无人机或强光设备。","evidence_ids":["wetland-law-2021"]}
+    ],
+    "stops": [
+      {"order":1,"name":"720 高地外围/公开平台（若当天开放）","access":"仅在管理方确认开放、围栏和工作人员指定范围内观察。","observe":"涨潮时鸟群可能转向高位休息；用望远镜记录群体距离、停歇与起飞，不承诺物种。","boundary":"不把 720 高地当成近距离拍摄台，不翻越围栏或寻找绕行入口。","evidence_ids":["forestry-gov-2026-01-08","mee-2021-09-06"]},
+      {"order":2,"name":"开放岸上潮线观察","access":"只在公开、安全岸上观察远处滩涂；退潮时不跟随鸟群向外滩移动。","observe":"记录潮水—鸟群距离—取食动作的变化，把当日观察与历史资料分开。","boundary":"不进入未开放滩涂、潮沟、繁殖或休息核心区。","evidence_ids":["wetland-law-2021","forestry-gov-2026-01-08"]},
+      {"order":3,"name":"川水湾、万亩湖泊等修复片区（资料背景）","access":"公开资料中的生态背景名称，不等于当前游客入口；没有当天许可不前往。","observe":"用于理解修复、生境和季节记录，不发布敏感点位或绕开管制的方法。","boundary":"若开放公告未覆盖该片区，直接跳过。","evidence_ids":["yancheng-gov-2026-05-09","dongtai-gov-2026-04-17"]}
+    ],
+    "abort_conditions":["风雨或能见度下降","潮水逼近或潮沟变得不可安全通过","管理方关闭或工作人员要求撤离","鸟群反复警戒、起飞或人员拥挤"]
+  },
+  "timeline": [
+    {"phase":"出发前","relative_time":"T-1 天至出发前","action":"复核开放、预约/接驳、潮汐、天气、交通和安全提示；保存来源日期。","stop_rule":"任一关键字段未确认则取消现场路线。"},
+    {"phase":"到达后","relative_time":"抵达后 0–30 分钟（不承诺固定时长）","action":"在公开入口或科普点确认今日可进入范围，听从工作人员和围栏。","stop_rule":"无法确认边界时只做公开资料学习。"},
+    {"phase":"观察段","relative_time":"开放时段内","action":"在指定平台或岸上观察潮线变化，保持距离，记录时间、风力、潮位来源和行为。","stop_rule":"触发任一撤离条件立即返回。"},
+    {"phase":"离开前","relative_time":"结束观察时","action":"清点垃圾和器材；将鸟种写成“观察记录/历史资料”，不发布敏感点位。","stop_rule":"不把未确认信息补写成路线事实。"}
+  ],
+  "habitats":[
+    {"name":"潮间带滩涂","relationship":"潮水改变可利用的觅食面；退潮时观察远处滩涂，不追随鸟群。","signals":["水位变化","群体移动","取食动作"],"source_ids":["forestry-gov-2026-01-08","mee-2021-09-06"],"confidence":"medium"},
+    {"name":"高潮位休息地/720 高地","relationship":"公开报道解释其为高潮位时的鸟类休息空间；现场功能和边界以管理方为准。","signals":["涨潮前后群体转移","远距离停歇"],"source_ids":["forestry-gov-2026-01-08"],"confidence":"medium"},
+    {"name":"修复片区与水面","relationship":"川水湾、万亩湖泊等用于理解修复背景；名称不等于游客开放路线。","signals":["季节性群体","水边和植被边缘活动"],"source_ids":["yancheng-gov-2026-05-09","dongtai-gov-2026-04-17","mee-2021-09-06"],"confidence":"medium"}
+  ],
+  "targets":[
+    {"group":"季节性迁徙/繁殖记录","items":["黑嘴鹬","小青脚鹬","斑尾塍鹬","黑尾塍鹬","黑脸琵鹭","黑嘴鸥","白额燕鸥","蛎鹬","环颈鸻"],"evidence_level":"公开报道中的季节性记录","claim":"用于建立资料线索，不保证当天可见。","source_ids":["yancheng-gov-2026-05-09","dongtai-gov-2026-04-17"]},
+    {"group":"长期区域背景","items":["累计记录鸟类超过 420 种"],"evidence_level":"区域历史累积记录","claim":"不是某个观察日的鸟单，也不推导当前开放点位。","source_ids":["dongtai-gov-2026-04-17","mee-2021-09-06"]},
+    {"group":"当天鸟讯","items":[],"evidence_level":"缺少实时来源","claim":"不发布“必见勺嘴鹬/火烈鸟/黑脸琵鹭”等承诺。","source_ids":[],"needs_review":true}
+  ],
+  "safety":{"rules":["不进入禁入区、繁殖区、核心休息区或未开放滩涂。","不追逐、不投喂、不播放诱鸟音、不使用无人机或强光惊扰鸟群。","不捕捉、不捡拾鸟蛋、贝类或其他野生动物；不翻越围栏。","保持安全距离，为鸟群保留退路；出现反复警戒或起飞时后退。","不公开濒危物种巢址、夜栖点、GPS 或绕过管制的方法。"],"risks":["潮水和潮沟","海堤与水沟失足","强风、雷雨和能见度变化","长时间暴晒和反光"],"legal_basis":"遵守湿地保护法和当地保护管理要求；现场管理人员指令优先。","source_ids":["wetland-law-2021"]},
+  "sources":[
+    {"id":"yancheng-gov-2026-05-09","type":"政府报道/生态观察","title":"盐城市政府公开的条子泥鸟类监测与繁殖季报道","url":"https://wap.yancheng.gov.cn/art/2026/5/9/art_45136_4424125.html","published_at":"2026-05-09","retrieved_at":"2026-10-01","valid_until":"季节性背景；不支撑当天鸟讯","excerpt":"提供川水湾繁殖季和鸟类监测线索。","confidence":"medium","copyright":"公开网页，仅链接引用"},
+    {"id":"dongtai-gov-2026-04-17","type":"政府报道/地方公开资料","title":"东台市政府公开的春迁鸟类与修复背景报道","url":"https://www.dongtai.gov.cn/art/2026/4/17/art_7763_4418582.html","published_at":"2026-04-17","retrieved_at":"2026-10-01","valid_until":"季节性背景；不支撑当天鸟讯","excerpt":"提供春迁鸟类、区域记录和修复背景线索。","confidence":"medium","copyright":"公开网页，仅链接引用"},
+    {"id":"mee-2021-09-06","type":"生态环境部公开案例/管理背景","title":"条子泥保护修复与湿地公园公开案例","url":"https://www.mee.gov.cn/home/ztbd/2021/mlhwyxalzjhd/algs/jss/202109/t20210906_900030.shtml","published_at":"2021-09-06","retrieved_at":"2026-10-01","valid_until":"静态管理背景；当前边界仍需复核","excerpt":"提供保护修复、湿地公园与管理边界背景。","confidence":"high","copyright":"公开网页，仅链接引用"},
+    {"id":"forestry-gov-2026-01-08","type":"国家林草局转载/生态观察","title":"720 高地与高潮位鸟类休息功能公开报道","url":"https://www.forestry.gov.cn/lyj/1/kpsp/20260108/655745.html","published_at":"2026-01-08","retrieved_at":"2026-10-01","valid_until":"季节性生态解释；不支撑开放承诺","excerpt":"解释 720 高地在涨潮时为鸟类提供休息空间的生态逻辑。","confidence":"medium","copyright":"公开网页，仅链接引用"},
+    {"id":"wetland-law-2021","type":"国家法律法规","title":"中华人民共和国湿地保护法","url":"https://www.gov.cn/xinwen/2021-12/24/content_5664406.htm","published_at":"2021-12-27","retrieved_at":"2026-10-01","valid_until":"法规以现行文本为准，出行前复核管理公告","excerpt":"用于安全距离、保护边界和禁止行为的合规提醒。","confidence":"high","copyright":"政府公开法规文本，链接引用"}
+  ],
+  "qa":{"review_status":"待核验","reviewer":"Codex automated pass","reviewed_at":"2026-10-01","next_action":"补齐当日开放、预约/接驳、交通、潮汐和费用来源；人工复核后再考虑 ready_for_review。","review_notes":["管理/法规来源与生态/观察来源已交叉，但当前开放边界和实时字段没有可复用的当日公告。","历史累计记录、季节性报道与当天鸟讯已分栏，未承诺必见。","HTML 由本 JSON 母版生成；任何内容更新应先改 JSON/Markdown，再重新生成。"]}
+}

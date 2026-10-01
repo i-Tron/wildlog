@@ -1,0 +1,8 @@
+{
+  "article_id": "js-dongtai-tiaozini",
+  "min_sources": 5,
+  "min_condition_count": 7,
+  "sections": ["decision", "conditions", "route", "timeline", "habitats", "targets", "safety", "sources"],
+  "metrics": {"semantic_sections": "8/8", "condition_tuple_target": 0.9, "evidence_link_target": 0.9, "qa_layers": 4, "safety_forbidden_hits": 0},
+  "regression_notes": ["历史记录不得渲染成当天鸟讯", "路线必须显示开放边界和停止条件", "来源版权声明必须可见"]
+}
