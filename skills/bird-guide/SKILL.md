@@ -1,14 +1,102 @@
 ---
 name: bird-guide-publishing
-description: Create and maintain source-aware birdwatching guide collections with reusable editorial structure, filters, and verification states.
+description: 以公开来源、时效字段和审核契约为基础，批量生产可复用的观鸟攻略。
 ---
 
-# Bird guide publishing
+# WildLog 攻略生产 Skill
 
-Use this workflow when drafting or updating an editorial birdwatching guide collection.
+用于把“月份 × 地区 × 主题”转成可读、可核验、可持续更新的观鸟攻略。生产稿与页面组件分离；没有来源和人工复核，不得把草稿标为已发布。
 
-- Keep content records separate from UI components. Each record should include a stable id, title, area, season, difficulty, description, status, and source note.
-- Treat `演示内容`, `待核验`, and `资料缺口` as visible states. Never convert a placeholder into a factual field or claim that an inaccessible prior conversation was reused.
-- Draft the collection around search, area/season/difficulty filters, a detail-page table of contents, local-only saves, and share with a copy-link fallback.
-- For each guide, request or record evidence for route access, opening rules, tides, observation etiquette, and any species or bird-news claims before marking it `已核验`.
-- Keep Shanghai content first. Add other regions only as real source material becomes available; preserve an explicit placeholder when the user names a desired region without accessible source material.
+## 1. 选题与任务矩阵
+
+先建立任务矩阵：`article_id | region | site | months | audience | site_type | status | owner`。
+
+- 选题优先级：保护地/湿地官方公开资料完整度 > 入口与规则可核验度 > 季节性观察价值 > 读者可执行性。
+- 地点必须消歧：保存 `canonical_name`、别名、行政区、坐标粒度（默认不公开敏感坐标）和管理边界。
+- 按月份 × 地区扩展，每个组合单独检索；不能把“全国”“杭州湾”当成单一入口，也不能复制一篇文章只替换地点名。
+- 首批建议 3 篇试产；生成前写明目标读者、适用季节、预计篇数、待核验字段和风险。
+- 状态流转：`queued → researching → drafted → fact_check → ready_for_review → approved → published`；有关键缺口进入 `blocked`。
+
+## 2. 资料采集与证据
+
+只采集可公开访问的页面、法规、论文、公开数据库或公开报道。优先顺序：管理部门/保护区官方页面；国家或省市政府及林草部门；同行评审论文和鸟类学/自然教育机构；有作者和日期的媒体报道。搜索摘要只能做线索。
+
+每个关键字段建立证据记录：
+
+`field | claim | source_url | source_type | source_date | retrieved_at | valid_until | excerpt | confidence | needs_review`
+
+每篇攻略至少使用两类来源交叉验证，且在来源表中写出冲突处理：
+
+1. **管理或法规类**：官方园区、保护区、政府公告、法律法规，验证边界、开放规则、保护要求。
+2. **生态或观察类**：同行评审论文、林草部门科普、公开鸟类调查或有署名日期的报道，验证生境、季节、鸟种线索。
+
+两类来源不能互相替代；若只找到一类，文章保持 `待核验`，不得写成确定事实。
+
+## 3. 结构化记录
+
+每篇 Markdown 正文旁必须有一条 `content/guides/index.json` 记录，至少包含：
+
+```json
+{
+  "article_id": "",
+  "slug": "",
+  "title": "",
+  "region": "",
+  "site": "",
+  "site_type": "",
+  "months": [],
+  "best_time_of_day": "",
+  "difficulty": "",
+  "duration": "",
+  "status": "draft|待核验|ready_for_review|approved",
+  "last_checked_at": "YYYY-MM-DD",
+  "next_review_at": "YYYY-MM-DD",
+  "freshness_class": "static|seasonal|live",
+  "transport_status": "待核验",
+  "hours_status": "待核验",
+  "tide_status": "待核验",
+  "source_ids": []
+}
+```
+
+未知值写 `unknown` 或 `待核验`，不要用常识补数字。实时字段（开放时间、预约、交通接驳、门票、潮汐、天气、当天鸟讯）必须同时写状态、来源、检索日期和有效期；过期来源不能支撑当前承诺。
+
+## 4. 叙事与正文结构
+
+每篇文章使用同一信息骨架，但保留地点差异：
+
+1. 标题与一句话摘要（地点 + 季节/人群 + 观察价值）。
+2. 适合谁、什么时候去：季节依据、时段建议、难度、停留时长。
+3. 怎么到：只写已证实的入口；公共交通、自驾、停车和步行条件缺证据就写 `待核验`。
+4. 观察路线：按开放观察点排序；不写保护区禁入区路线，不公开敏感巢址。
+5. 重点鸟种：区分稳定记录、季节性记录、偶见记录和仅作线索的历史报道。
+6. 装备与准备：望远镜、鞋服、饮水、防晒、天气和充电；不把装备建议伪装成现场体验。
+7. 规则、安全与生态保护：保持距离、不投喂、不播放诱鸟音、不追逐、不带走野生动物。
+8. 费用、开放时间与服务：以字段表呈现，当前不确定项明确标注。
+9. 一日行程示例：用“先核验再出发”的相对顺序，避免虚构班次与潮位。
+10. 来源、日期、有效期、置信度与下次复核条件。
+
+## 5. 视觉与版式契约
+
+- 移动端优先：摘要、状态、难度、月份和“待核验”警示在首屏可见。
+- 使用短段落、二级标题、表格和列表；每个页面保留 `article_id`、更新时间和来源入口。
+- 卡片只展示稳定字段；实时字段进入详情页，并显示 `last_checked_at`、`valid_until`、状态颜色和来源链接。
+- 视觉语气克制，避免把候鸟、保护区或潮滩做成打卡宣传；禁止使用未授权图片、私人照片和敏感坐标。
+
+## 6. 合规边界
+
+遵守自然保护区、湿地和野生动物保护规定。观鸟、研究和科普须保持安全距离，不能进入禁入区、破坏巢址、捡拾鸟蛋、捕捉/带走野生动物、投喂或使用诱鸟音。不得公开濒危物种的精确巢址、夜栖点、GPS 或绕开管制的进入方法。不得改写私人行程、预订信息、联系方式为公共攻略；历史报道与当天鸟讯必须分开。遇到来源冲突或无法访问，保留待核验并说明阻塞。
+
+## 7. QA 验收契约
+
+合并前逐篇执行并记录结果：
+
+- **事实**：地点、行政区、保护区边界、鸟种和季节都有来源；没有虚构实地体验。
+- **时效**：开放/预约、交通、潮汐、费用、天气和鸟讯都有 `status + source + source_date + retrieved_at + valid_until`；过期字段自动回到待核验。
+- **交叉验证**：至少两类来源，关键冲突写入 `review_notes`；单一来源不得标记已核验。
+- **可执行性**：路线只覆盖公开开放点，难度与时长不做无来源精确承诺；文章能在手机上按标题和列表阅读。
+- **生态与合规**：不泄露敏感点位、不诱导接近鸟群、不提供绕过管理的建议。
+- **内容质量**：每篇有地点独特信息；标题、路线、鸟种说明和装备建议没有机械复制。
+- **机器验收**：`index.json` 可解析，`article_id/slug` 唯一，来源 URL 为 `https://`，必填字段不为空；页面卡片和详情状态一致。
+
+验收输出格式：`article_id | passed_checks | failed_checks | unrun_checks | reviewer | reviewed_at | next_action`。任何关键事实缺口、单来源、时效缺失或合规风险都不得进入 `approved/published`。
