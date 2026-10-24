@@ -1,0 +1,28 @@
+{
+  "article_id": "hz-qiantang-hangzhou-bay",
+  "min_sources": 6,
+  "min_condition_count": 7,
+  "sections": [
+    "decision",
+    "conditions",
+    "route",
+    "timeline",
+    "habitats",
+    "targets",
+    "safety",
+    "sources"
+  ],
+  "metrics": {
+    "semantic_sections": "8/8",
+    "condition_tuple_target": 0.9,
+    "evidence_link_target": 0.9,
+    "qa_layers": 4,
+    "safety_forbidden_hits": 0
+  },
+  "regression_notes": [
+    "历史公告不得写成当前开放",
+    "源网页发布日期精度不得凭空补齐",
+    "当天鸟讯单独标记待核验",
+    "八区块及母版内容完整保留"
+  ]
+}

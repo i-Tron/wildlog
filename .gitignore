@@ -1,0 +1,11 @@
+# Local secrets and environment overrides
+.env
+.env.*
+!.env.example
+
+# Local dependencies and OS files
+node_modules/
+.DS_Store
+
+# Generated QA output
+tests/reports/

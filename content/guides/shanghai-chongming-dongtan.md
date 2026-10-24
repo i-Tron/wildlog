@@ -1,5 +1,7 @@
 # 崇明东滩｜先确认开放规则，再看潮间带候鸟
 
+> **母版与生成**：本篇的机器可读母版是 [`sh-chongming-dongtan.json`](./sh-chongming-dongtan.json)，详情页 [`sh-chongming-dongtan.html`](./sh-chongming-dongtan.html) 由 `scripts/render-guide.mjs` 生成。修改事实时先更新 JSON/本 Markdown，再重新生成并运行四层 QA。
+
 > **摘要**：给第一次去崇明东滩的人一条“先确认、后出发”的半日框架。东滩是河口潮汐湿地和候鸟迁徙节点，公众可接触的内容以官方开放的科普教育基地、场馆和工作人员引导范围为准；保护区其他区域不按普通景区理解。
 
 - **article_id**：`sh-chongming-dongtan`

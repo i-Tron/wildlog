@@ -1,5 +1,7 @@
 # 杭州湾/钱塘江湾｜把江海湿地当作迁徙观察窗口
 
+> **母版与生成**：本篇的机器可读母版是 [`hz-qiantang-hangzhou-bay.json`](./hz-qiantang-hangzhou-bay.json)，详情页 [`hz-qiantang-hangzhou-bay.html`](./hz-qiantang-hangzhou-bay.html) 由 `scripts/render-guide.mjs` 生成。修改事实时先更新 JSON/本 Markdown，再重新生成并运行四层 QA。
+
 > **摘要**：杭州钱塘区的临江江海湿地、钱塘江沿岸和杭州湾湿地属于相连但不等同的观察语境。本稿用“河口—海塘—滩涂”来组织入门路线，明确区分历史鸟类调查、公开报道与当天开放信息，不把任何一段岸线默认成景区。
 
 - **article_id**：`hz-qiantang-hangzhou-bay`

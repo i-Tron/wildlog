@@ -33,3 +33,42 @@ python3 -m http.server 8000
 ## 当前原型边界
 
 这是可打开的静态原型，不包含后端、账号、投稿、评论、实时鸟讯、活动报名、支付、内容管理后台或数据库。示例路线与状态用于演示信息架构；首批崇明东滩、东台条子泥、杭州湾/钱塘江湾三篇均由公开资料整理，仍标记待核验；不含私人行程、预订或联系方式。市场、用户、竞品和商业化材料中的数字仍是待核实假设。
+
+## 鸟讯 MVP
+
+根目录 `index.html` 现在是鸟讯入口，保留了 `content/guides/index.html` 的攻略入口。页面包含：
+
+- 鸟讯列表：物种、观测时间、发布时间、来源与证据/审核状态；支持关键词、地区、证据状态和时间范围筛选。
+- 区域地图：使用 SVG 绘制上海、江苏、浙江的区域级示意点；不展示珍稀鸟、巢址或夜栖点精确坐标。
+- 详情与来源：每条记录可打开来源原文、查看坐标系与精度策略，并与列表和地图联动。
+- 路线入口：使用无需 API Key 的高德 URI 搜索适配层，配置集中在页面的 `routeUrl()` 函数，后续可替换为其他国内地图 URI/API。
+
+`content/sightings.json` 是鸟讯结构化数据母版。当前记录明确标注为“演示数据，待现场核验”，公开来源只提供背景线索，不能当作当天实见。修改数据后可运行 `node scripts/qa-sightings.mjs` 做字段、来源链接、区域级坐标和安全边界检查。
+
+## 鸟讯来源采集验证层
+
+来源适配器位于 `scripts/sources/adapters.mjs`，统一输出 `source/sourceId/species/observedAt/publishedAt/region/latitude/longitude/precision/evidenceUrl/reviewState/rawFetchedAt/freshnessMinutes/status`。采集器只读，不负责发布，也不写入密钥：
+
+```bash
+# 使用 fixtures 验证适配器和字段映射
+node scripts/collect-sources.mjs --fixture
+
+# 运行只读 live smoke；未配置的受限来源会明确输出 blocked
+node scripts/collect-sources.mjs --smoke
+
+# 运行脚本级测试
+node scripts/test-source-adapters.mjs
+```
+
+当前适配器：
+
+- `inaturalist`：`/v1/observations`，支持上海中心点、半径、日期范围、`quality_grade` 筛选；保留观测页链接、质量等级和原始记录，遇到 obscured/geoprivacy 或敏感分类时自动做区域级模糊化。
+- `china-birdreport`：保留中国鸟类报告中心的接口契约和可选 `BIRDREPORT_ENDPOINT` smoke；没有经授权的稳定 JSON 接口时返回 `blocked/not_configured`，不绕过登录、验证码、签名或限流。
+- `huangpu-cloudguan`：支持通过 `HUANGPU_CLOUDGUAN_BASE_URL` 检验 `getSoundRecord`、`getHongwaiRecord`、`speciesList` 三个方法；未提供公开接口地址时返回 blocked，并保留方法级状态。
+- 社交平台：只提供人工授权线索队列 `createSocialLead()`，不自动抓取小红书、抖音或微信公众号。
+
+Fixtures 在 `tests/fixtures/sources/`。测试覆盖去重、统一字段、时间新鲜度、429 重试退避、敏感坐标模糊化、来源契约阻塞和手工线索状态。
+
+## Staging 基建模板
+
+第一阶段模板见 [`infra/README.md`](infra/README.md)，包括 Docker Compose（API/worker 占位、MySQL 8.x、MinIO）、MySQL 最小迁移和 `.env.example`。当前仍是静态原型，模板不表示已部署服务器，也不修改 `cses-exam`；远端仓库为公开的 `i-Tron/wildlog`，默认分支为 `master`。

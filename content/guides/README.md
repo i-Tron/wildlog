@@ -4,10 +4,10 @@
 
 - `index.json` 是列表、筛选和批量扩展的机器可读入口；`article_id` 与 `slug` 必须稳定且唯一。
 - 每篇 `*.md` 是编辑正文，包含摘要、路线骨架、重点鸟种、实时字段表、来源交叉验证、合规说明和 QA 记录。
-- 条子泥的 `js-dongtai-tiaozini.json` 是冻结的机器可读母版；`js-dongtai-tiaozini.html` 由 `scripts/render-guide.mjs` 生成，HTML 不手工维护同一事实的第二份副本。
+- `sh-chongming-dongtan.json`、`js-dongtai-tiaozini.json`、`hz-qiantang-hangzhou-bay.json` 是三篇冻结的机器可读母版；对应 HTML 由 `scripts/render-guide.mjs` 生成，HTML 不手工维护同一事实的第二份副本。
 - 月份使用 `1-12` 数字数组；地区使用可消歧的行政区/湿地名称。扩展新月份或地区时复制结构，不复制未经核验的实时字段。
 - `static` 字段建议半年复核，`seasonal` 字段按迁徙季复核，`live` 字段每次出行前复核；复核后更新 `last_checked_at` 与 `next_review_at`。
-- 更新母版后运行 `node scripts/render-guide.mjs content/guides/js-dongtai-tiaozini.json content/guides/js-dongtai-tiaozini.html`，再运行 `node scripts/qa-guides.mjs js-dongtai-tiaozini`；QA fixture 位于 `tests/fixtures/`。
+- 更新母版后运行 `node scripts/render-guide.mjs content/guides/<article_id>.json`，再运行 `node scripts/qa-guides.mjs <article_id>`；QA fixture 和每轮报告位于 `tests/fixtures/` 与 `tests/reports/`。
 - 状态只允许 `draft`、`待核验`、`ready_for_review`、`approved`、`published`；当前首批三篇均为 `待核验`。
 
 当前试产矩阵：

@@ -1,0 +1,572 @@
+{
+  "schema_version": "1.1",
+  "article_id": "hz-qiantang-hangzhou-bay",
+  "slug": "hangzhou-bay-qiantang-estuary",
+  "title": "杭州湾/钱塘江湾｜把江海湿地当作迁徙观察窗口",
+  "region": "浙江·杭州钱塘区（钱塘江河口及杭州湾沿岸）",
+  "site": "临江江海湿地、钱塘江沿岸公开岸线（分区与入口待核验）",
+  "site_type": "河口滩涂湿地/省级重要湿地建设区域",
+  "summary": "用河口—海塘—滩涂的顺序理解钱塘江湾；每次只选择一个已确认开放的分区，不把整段岸线默认成景区。",
+  "status": "待核验",
+  "last_checked_at": "2026-10-01",
+  "next_review_at": "2026-11-01",
+  "freshness_class": "seasonal",
+  "copyright": "原创编辑整理；外部资料保留原权利，仅链接与摘要引用；未使用来源图片，外部图片使用前须取得许可。",
+  "location": {
+    "canonical_name": "杭州钱塘区江海湿地与钱塘江河口",
+    "aliases": [
+      "杭州湾/钱塘江湾",
+      "临江江海湿地"
+    ],
+    "administrative_area": "浙江省杭州市钱塘区",
+    "coordinate_policy": "不公开敏感巢址、夜栖点或可绕过管制的精确坐标",
+    "excluded_sites": [
+      "宁波慈溪杭州湾国家湿地公园：不同地点与管理主体，须另建攻略"
+    ]
+  },
+  "decision": {
+    "audience": "想在城市周边理解河口湿地、第一次分辨鸻鹬与雁鸭，或练习观察生境而不是追鸟的人。",
+    "months": [
+      11,
+      12,
+      1,
+      2
+    ],
+    "season_note": "11—2 月作为越冬候鸟资料窗口；春秋迁徙也可能有记录，需按季节资料复核。",
+    "best_time_of_day": "日出前后和低干扰时段可作为观察建议；潮位与岸线安全必须按当天地点复核。",
+    "difficulty": "入门到进阶（按当天开放岸线）",
+    "duration": "半日建议；分区步行距离待核验。",
+    "value": "把临江江海湿地、一线海塘和钱塘江边分成不同观察语境，避免将不同管理主体混成一条路线。",
+    "go_no_go": [
+      "先确认一个具体分区、入口、开放状态和岸线安全；无法确认就改为公开科普空间或取消。",
+      "当天不得把历史调查、媒体记录或建设报道写成当前开放、交通、潮汐或必见鸟种承诺。"
+    ]
+  },
+  "conditions": [
+    {
+      "id": "zone_scope",
+      "label": "临江江海湿地开放范围",
+      "value": "公开攻略给出分区观察语境；当前入口和可进入岸线待确认。",
+      "status": "待核验",
+      "source_ids": [
+        "hzzx-2022-12-07"
+      ],
+      "source_date": "2022-12-07",
+      "retrieved_at": "2026-10-01",
+      "valid_until": "当前入口需复核",
+      "confidence": "medium",
+      "needs_review": true
+    },
+    {
+      "id": "park_status",
+      "label": "钱塘大湾区湿地公园状态",
+      "value": "分期建设/开放信息持续更新，不能以报道替代当日公告。",
+      "status": "待核验",
+      "source_ids": [
+        "forestry-gov-2024",
+        "tidenews-2026"
+      ],
+      "source_date": "2024 / 2026（原稿年份，月日待核验）",
+      "retrieved_at": "2026-10-01",
+      "valid_until": "当天公告为准",
+      "confidence": "medium",
+      "needs_review": true
+    },
+    {
+      "id": "transport",
+      "label": "公共交通与停车",
+      "value": "未形成统一可复用字段；不采用个人观鸟线路作为官方接驳。",
+      "status": "待核验",
+      "source_ids": [],
+      "source_date": "unknown（未取得来源）",
+      "retrieved_at": "2026-10-01",
+      "valid_until": "每次出行前",
+      "confidence": "low",
+      "needs_review": true
+    },
+    {
+      "id": "tide_safety",
+      "label": "潮位与岸线安全",
+      "value": "未提供具体潮窗；报道和论文不替代当天潮汐、安全公告。",
+      "status": "待核验",
+      "source_ids": [
+        "biodiversity-science-2013",
+        "wetland-law-2021"
+      ],
+      "source_date": "2013 / 2021-12-27（背景来源，不是潮汐表）",
+      "retrieved_at": "2026-10-01",
+      "valid_until": "按地点和日期复核",
+      "confidence": "low",
+      "needs_review": true
+    },
+    {
+      "id": "weather",
+      "label": "天气与撤离",
+      "value": "河口有潮差、堤岸高差、泥滩、水流、强风和雷雨风险。",
+      "status": "需现场判断",
+      "source_ids": [
+        "wetland-law-2021"
+      ],
+      "source_date": "2021-12-27",
+      "retrieved_at": "2026-10-01",
+      "valid_until": "每次出行前及现场",
+      "confidence": "medium",
+      "needs_review": true
+    },
+    {
+      "id": "birds",
+      "label": "鸟种与季节",
+      "value": "区域公开资料称记录 147 种、22 种国家重点保护野生动物；当天不保证。",
+      "status": "资料支持、当天不保证",
+      "source_ids": [
+        "hzzx-2022-12-07",
+        "hznews-2024-12-05",
+        "biodiversity-science-2013"
+      ],
+      "source_date": "2024-12-05",
+      "retrieved_at": "2026-10-01",
+      "valid_until": "季节性/静态背景",
+      "confidence": "medium",
+      "needs_review": true
+    },
+    {
+      "id": "fee",
+      "label": "门票与服务",
+      "value": "分区管理主体不同，不能统一推断。",
+      "status": "待核验",
+      "source_ids": [],
+      "source_date": "unknown（未取得来源）",
+      "retrieved_at": "2026-10-01",
+      "valid_until": "每次出行前",
+      "confidence": "low",
+      "needs_review": true
+    },
+    {
+      "id": "bird_news",
+      "label": "当天鸟讯",
+      "value": "本稿没有实时接口；当天鸟种说法须另取公开且带日期的记录。",
+      "status": "待核验",
+      "source_ids": [],
+      "source_date": "unknown（未取得来源）",
+      "retrieved_at": "2026-10-01",
+      "valid_until": "每次出行当天",
+      "confidence": "low",
+      "needs_review": true
+    }
+  ],
+  "route": {
+    "preflight": [
+      {
+        "step": 1,
+        "action": "选择单一分区，查看管理方公告，确认开放入口、岸线安全、天气、潮汐、交通和停车。",
+        "evidence_ids": [
+          "hzzx-2022-12-07",
+          "wetland-law-2021"
+        ]
+      },
+      {
+        "step": 2,
+        "action": "确认钱塘大湾区湿地公园等建设/开放状态，不跨区拼接未经核验的打卡路线。",
+        "evidence_ids": [
+          "forestry-gov-2024",
+          "tidenews-2026"
+        ]
+      },
+      {
+        "step": 3,
+        "action": "准备望远镜、防风外层、帽子、防晒和饮水；不使用无人机、诱鸟音或强光补光。",
+        "evidence_ids": [
+          "wetland-law-2021"
+        ]
+      }
+    ],
+    "stops": [
+      {
+        "order": 1,
+        "name": "临江江海湿地/开放步道（若当天开放）",
+        "access": "只在管理方确认开放的步道或观景位置活动。",
+        "observe": "日出前后观察水面、芦苇和远处滩涂，用望远镜看群体移动。",
+        "boundary": "不下滩、不涉水、不越过围栏或警示线。",
+        "evidence_ids": [
+          "hzzx-2022-12-07",
+          "wetland-law-2021"
+        ]
+      },
+      {
+        "order": 2,
+        "name": "安全海塘岸线（若当天开放且风力适宜）",
+        "access": "沿开放、安全岸线观察，不把海塘外侧默认成可进入滩涂。",
+        "observe": "记录鸻鹬、雁鸭和鹭类的生境、距离与行为；避免向鸟群靠近。",
+        "boundary": "潮水、强风或警示关闭时立即撤回。",
+        "evidence_ids": [
+          "hzzx-2022-12-07",
+          "biodiversity-science-2013"
+        ]
+      },
+      {
+        "order": 3,
+        "name": "钱塘江边复盘/替代方案",
+        "access": "只在公开岸线或科普空间复盘；关闭时取消，不寻找绕行入口。",
+        "observe": "记录水位、风向、光线、鸟群距离和行为，把区域历史与当天实见分栏。",
+        "boundary": "不前往宁波慈溪等另一个管理主体的湿地公园冒充本篇路线。",
+        "evidence_ids": [
+          "hznews-2024-12-05",
+          "forestry-gov-2024"
+        ]
+      }
+    ],
+    "abort_conditions": [
+      "涨水、强风、雷雨或能见度下降",
+      "海塘/岸线关闭或警示线变化",
+      "人流拥挤或鸟群反复警戒、起飞",
+      "无法确认分区边界、潮汐或撤离路径"
+    ]
+  },
+  "timeline": [
+    {
+      "phase": "出发前",
+      "relative_time": "T-1 天至出发前",
+      "action": "确认一个具体分区、开放状态、天气、潮汐、岸线安全、交通与停车。",
+      "stop_rule": "任一关键字段未确认则改为资料学习或取消。"
+    },
+    {
+      "phase": "抵达后",
+      "relative_time": "抵达后",
+      "action": "在公开入口查看管理提示，再决定是否沿步道/海塘观察。",
+      "stop_rule": "入口或边界不明时不进入岸线。"
+    },
+    {
+      "phase": "观察段",
+      "relative_time": "日出前后或开放时段内",
+      "action": "观察远处水面和滩涂，记录生境、鸟群距离和行为，不追鸟。",
+      "stop_rule": "触发涨水、强风、关闭或警戒条件立即离开。"
+    },
+    {
+      "phase": "复盘与撤离",
+      "relative_time": "结束观察时",
+      "action": "把区域历史记录与当天实见分栏保存，标明日期和来源，清点垃圾和器材。",
+      "stop_rule": "不把未确认信息补写成路线事实。"
+    }
+  ],
+  "habitats": [
+    {
+      "name": "河口潮间带",
+      "relationship": "潮差改变滩涂可利用面；只在开放岸线远距离观察。",
+      "signals": [
+        "水位变化",
+        "鸻鹬取食",
+        "群体移动"
+      ],
+      "source_ids": [
+        "biodiversity-science-2013",
+        "hzzx-2022-12-07"
+      ],
+      "confidence": "medium"
+    },
+    {
+      "name": "海塘与芦苇边缘",
+      "relationship": "海塘、芦苇和城市岸线形成不同观察语境，不能拼成一条默认开放路线。",
+      "signals": [
+        "水边飞行",
+        "鹭类停歇",
+        "雁鸭活动"
+      ],
+      "source_ids": [
+        "hznews-2024-12-05",
+        "hzzx-2022-12-07"
+      ],
+      "confidence": "medium"
+    },
+    {
+      "name": "钱塘江河口南岸滨海湿地",
+      "relationship": "学术调查支持候鸟和重点保护鸟类的生境背景，不支持当前点位开放。",
+      "signals": [
+        "季节性群体",
+        "潮线与岸线变化"
+      ],
+      "source_ids": [
+        "biodiversity-science-2013"
+      ],
+      "confidence": "high"
+    }
+  ],
+  "targets": [
+    {
+      "group": "区域记录背景",
+      "items": [
+        "小天鹅",
+        "黑脸琵鹭",
+        "震旦鸦雀"
+      ],
+      "evidence_level": "官方公开资料的区域记录",
+      "claim": "钱塘区记录 147 种、22 种国家重点保护野生动物；数字不是当天鸟单。",
+      "source_ids": [
+        "hzzx-2022-12-07"
+      ]
+    },
+    {
+      "group": "沿江常见类群/记录",
+      "items": [
+        "白鹭",
+        "苍鹭",
+        "斑嘴鸭",
+        "牛背鹭",
+        "白鹡鸰",
+        "红颈滨鹬",
+        "金眶鸻"
+      ],
+      "evidence_level": "公开媒体和观察线索",
+      "claim": "用于初学者建立水边观察清单，不保证当天可见。",
+      "source_ids": [
+        "hznews-2024-12-05"
+      ]
+    },
+    {
+      "group": "学术背景",
+      "items": [
+        "候鸟群落与国家重点保护鸟类"
+      ],
+      "evidence_level": "同行评审论文",
+      "claim": "支持河口湿地重要性，不支持当前入口或当日可见承诺。",
+      "source_ids": [
+        "biodiversity-science-2013"
+      ]
+    },
+    {
+      "group": "当天鸟讯",
+      "items": [],
+      "evidence_level": "缺少实时来源",
+      "claim": "任何当天鸟种说法都需另行取得带日期公开记录。",
+      "source_ids": [],
+      "needs_review": true
+    }
+  ],
+  "safety": {
+    "rules": [
+      "不进入禁入区、繁殖区、核心休息区或未开放滩涂。",
+      "只在开放、安全、有人管理的岸线活动，不下滩、不涉水、不越过围栏。",
+      "不追逐、不投喂、不播放诱鸟音、不使用无人机或强光惊扰鸟群。",
+      "保持与鸟群的安全距离，为鸟群保留退路；反复警戒或起飞时后退。",
+      "不捕捉、不采集鸟蛋或其他野生动物，不跨越警示线。",
+      "不公开敏感巢址、夜栖点、GPS 或绕过管制的方法。"
+    ],
+    "risks": [
+      "潮差、泥滩和水流",
+      "堤岸高差与失足",
+      "强风、雷雨和能见度变化",
+      "冬季低温与长时间暴晒"
+    ],
+    "legal_basis": "遵守湿地保护法及当地岸线管理要求；现场管理人员指令优先。",
+    "source_ids": [
+      "wetland-law-2021"
+    ]
+  },
+  "sources": [
+    {
+      "id": "hzzx-2022-12-07",
+      "type": "杭州政协/生态环境部门公开攻略",
+      "title": "杭州钱塘区观鸟攻略与区域鸟类记录",
+      "url": "https://www.hzzx.gov.cn/cshz/content/2022-12/07/content_8418688.htm",
+      "published_at": "2022-12-07",
+      "retrieved_at": "2026-10-01",
+      "valid_until": "季节性分区背景；当前入口须复核",
+      "excerpt": "提供临江江海湿地、一线海塘、钱塘江边的观察语境和区域鸟类记录。",
+      "confidence": "medium",
+      "copyright": "公开网页，仅链接引用",
+      "needs_review": true,
+      "retrieval_note": "继承原 Markdown 检索记录；本轮未重新访问该网页",
+      "evidence_roles": [
+        "ecology"
+      ]
+    },
+    {
+      "id": "hznews-2024-12-05",
+      "type": "杭州新闻/生态观察报道",
+      "title": "钱塘江沿岸芦苇湿地与常见鸟类报道",
+      "url": "https://hznews.hangzhou.com.cn/chengshi/content/2024-12/05/content_8821896_0.htm",
+      "published_at": "2024-12-05",
+      "retrieved_at": "2026-10-01",
+      "valid_until": "季节性观察线索；不支撑当天鸟讯",
+      "excerpt": "补充沿江芦苇湿地和常见鸟类线索。",
+      "confidence": "medium",
+      "copyright": "公开网页，仅链接引用",
+      "needs_review": true,
+      "retrieval_note": "继承原 Markdown 检索记录；本轮未重新访问该网页",
+      "evidence_roles": [
+        "ecology"
+      ]
+    },
+    {
+      "id": "biodiversity-science-2013",
+      "type": "同行评审学术论文/生态调查",
+      "title": "杭州湾及钱塘江河口南岸滨海湿地鸟类群落调查",
+      "url": "https://www.biodiversity-science.net/CN/10.3724/SP.J.1003.2013.10213",
+      "published_at": "2013（仅确认年份，月日待核验）",
+      "retrieved_at": "2026-10-01",
+      "valid_until": "静态生态背景；不支撑当前开放",
+      "excerpt": "提供河口滨海湿地候鸟和国家重点保护鸟类的群落背景。",
+      "confidence": "high",
+      "copyright": "论文页面，仅链接引用",
+      "needs_review": true,
+      "retrieval_note": "继承原 Markdown 检索记录；本轮未重新访问该网页",
+      "evidence_roles": [
+        "ecology"
+      ]
+    },
+    {
+      "id": "forestry-gov-2024",
+      "type": "国家林草局政府网/湿地建设报道",
+      "title": "钱塘江滩涂湿地与省级湿地公园建设报道",
+      "url": "https://www.forestry.gov.cn/c/www/dfdt/567406.jhtml",
+      "published_at": "2024（仅确认年份，月日待核验）",
+      "retrieved_at": "2026-10-01",
+      "valid_until": "建设背景；当前开放须复核",
+      "excerpt": "提供钱塘江滩涂湿地和省级湿地公园建设语境。",
+      "confidence": "medium",
+      "copyright": "公开网页，仅链接引用",
+      "needs_review": true,
+      "retrieval_note": "继承原 Markdown 检索记录；本轮未重新访问该网页",
+      "evidence_roles": [
+        "management"
+      ]
+    },
+    {
+      "id": "tidenews-2026",
+      "type": "潮新闻/开放动态报道",
+      "title": "钱塘大湾区湿地公园二期开放动态",
+      "url": "https://tidenews.com.cn/tmh_news.html?id=6a4915dfc7c79f0001c0b3af",
+      "published_at": "2026（旧稿年份，月日待核验）",
+      "retrieved_at": "2026-10-01",
+      "valid_until": "开放动态；不能替代当日公告",
+      "excerpt": "补充分期建设和开放动态线索。",
+      "confidence": "medium",
+      "copyright": "公开网页，仅链接引用",
+      "needs_review": true,
+      "retrieval_note": "继承原 Markdown 检索记录；本轮未重新访问该网页",
+      "evidence_roles": [
+        "ecology"
+      ]
+    },
+    {
+      "id": "wetland-law-2021",
+      "type": "国家法律法规",
+      "title": "中华人民共和国湿地保护法",
+      "url": "https://www.gov.cn/xinwen/2021-12/24/content_5664406.htm",
+      "published_at": "2021-12-27",
+      "retrieved_at": "2026-10-01",
+      "valid_until": "法规以现行文本为准",
+      "excerpt": "用于安全距离、禁捕和湿地保护边界。",
+      "confidence": "high",
+      "copyright": "政府公开法规文本，链接引用",
+      "needs_review": true,
+      "retrieval_note": "继承原 Markdown 检索记录；本轮未重新访问该网页",
+      "evidence_roles": [
+        "management"
+      ]
+    }
+  ],
+  "qa": {
+    "review_status": "待核验",
+    "reviewer": "Codex automated pass",
+    "reviewed_at": "2026-10-01",
+    "next_action": "补齐当前分区开放、交通、潮汐、岸线安全和费用来源；人工复核后再考虑 ready_for_review。",
+    "review_notes": [
+      "官方攻略、学术论文、政府建设报道和媒体观察线索已交叉，未把它们写成当前开放承诺。",
+      "区域历史记录与当天鸟讯已分栏。",
+      "HTML 由本 JSON 母版生成，更新须重新生成并跑 QA。",
+      "既有编辑源转换，本轮没有重新检索原网页；检索日期继承旧稿，来源内容需人工复核。"
+    ],
+    "unrun_checks": [
+      "当前开放/交通/潮汐在线核验",
+      "现场路线与人工复核",
+      "浏览器视口和视觉检查"
+    ]
+  },
+  "provenance": {
+    "imported_from": "hangzhou-bay-qiantang-estuary.md",
+    "source_verification": "既有编辑源转换，本轮没有重新检索原网页；检索日期继承旧稿，来源内容需人工复核。",
+    "baseline_commit": "08516ce"
+  },
+  "generation_plan": {
+    "audience": {
+      "value": "想在城市周边理解河口湿地、第一次分辨鸻鹬与雁鸭，或练习观察生境而不是追鸟的人。",
+      "status": "known"
+    },
+    "season_window": {
+      "value": [
+        11,
+        12,
+        1,
+        2
+      ],
+      "status": "needs_review"
+    },
+    "canonical_place": {
+      "value": "杭州钱塘区江海湿地与钱塘江河口",
+      "status": "known"
+    },
+    "open_boundary": {
+      "value": "只覆盖当天确认开放的管理范围",
+      "status": "needs_review"
+    },
+    "route_stops": {
+      "value": [
+        "临江江海湿地/开放步道（若当天开放）",
+        "安全海塘岸线（若当天开放且风力适宜）",
+        "钱塘江边复盘/替代方案"
+      ],
+      "status": "needs_review"
+    },
+    "timeline": {
+      "value": [
+        "出发前",
+        "抵达后",
+        "观察段",
+        "复盘与撤离"
+      ],
+      "status": "known"
+    },
+    "habitat_questions": {
+      "value": [
+        "河口潮间带",
+        "海塘与芦苇边缘",
+        "钱塘江河口南岸滨海湿地"
+      ],
+      "status": "known"
+    },
+    "target_taxa": {
+      "value": [
+        "区域记录背景",
+        "沿江常见类群/记录",
+        "学术背景",
+        "当天鸟讯"
+      ],
+      "status": "needs_review"
+    },
+    "live_fields": {
+      "value": [
+        "zone_scope",
+        "park_status",
+        "transport",
+        "tide_safety",
+        "weather",
+        "birds",
+        "fee"
+      ],
+      "status": "needs_review"
+    },
+    "safety_gates": {
+      "value": [
+        "涨水、强风、雷雨或能见度下降",
+        "海塘/岸线关闭或警示线变化",
+        "人流拥挤或鸟群反复警戒、起飞",
+        "无法确认分区边界、潮汐或撤离路径"
+      ],
+      "status": "known"
+    },
+    "source_gaps": {
+      "value": "补齐当前分区开放、交通、潮汐、岸线安全和费用来源；人工复核后再考虑 ready_for_review。",
+      "status": "unknown"
+    }
+  }
+}

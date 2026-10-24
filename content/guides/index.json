@@ -6,7 +6,14 @@
     "region": "上海·崇明区",
     "site": "崇明东滩鸟类国家级自然保护区（公众科普教育基地）",
     "site_type": "河口潮汐湿地/自然保护区",
-    "months": [10, 11, 12, 1, 2, 3],
+    "months": [
+      10,
+      11,
+      12,
+      1,
+      2,
+      3
+    ],
     "best_time_of_day": "以预约时段和现场引导为准；日出前后仅作自然观察建议",
     "difficulty": "入门（预约制）",
     "duration": "约半日；历史官方公告曾给出科普基地约1.5小时，当前待核验",
@@ -17,7 +24,15 @@
     "transport_status": "待核验",
     "hours_status": "待核验",
     "tide_status": "待核验",
-    "source_ids": ["cm-gov-2024-10-17", "shanghai-gov-2025-04-29", "sh-green-2024-08-31", "cm-gov-2025-05-04", "wetland-law-2021"]
+    "source_ids": [
+      "cm-gov-2024-10-17",
+      "shanghai-gov-2025-04-29",
+      "sh-green-2024-08-31",
+      "cm-gov-2025-05-04",
+      "wetland-law-2021"
+    ],
+    "master_source": "sh-chongming-dongtan.json",
+    "html_generated_by": "scripts/render-guide.mjs"
   },
   {
     "article_id": "js-dongtai-tiaozini",
@@ -28,7 +43,15 @@
     "site_type": "滨海潮间带湿地/世界自然遗产地组成部分",
     "master_source": "js-dongtai-tiaozini.json",
     "html_generated_by": "scripts/render-guide.mjs",
-    "months": [4, 5, 6, 9, 10, 11, 12],
+    "months": [
+      4,
+      5,
+      6,
+      9,
+      10,
+      11,
+      12
+    ],
     "best_time_of_day": "涨潮前后作为观察逻辑；准确潮窗待核验",
     "difficulty": "进阶（需确认开放安排）",
     "duration": "半日到一日；路线与接驳待核验",
@@ -39,7 +62,13 @@
     "transport_status": "待核验",
     "hours_status": "待核验",
     "tide_status": "待核验",
-    "source_ids": ["yancheng-gov-2026-05-09", "dongtai-gov-2026-04-17", "mee-2021-09-06", "forestry-gov-2026-01-08", "wetland-law-2021"]
+    "source_ids": [
+      "yancheng-gov-2026-05-09",
+      "dongtai-gov-2026-04-17",
+      "mee-2021-09-06",
+      "forestry-gov-2026-01-08",
+      "wetland-law-2021"
+    ]
   },
   {
     "article_id": "hz-qiantang-hangzhou-bay",
@@ -48,7 +77,12 @@
     "region": "浙江·杭州钱塘区（钱塘江河口及杭州湾沿岸）",
     "site": "临江江海湿地、钱塘江沿岸公开岸线（分区与入口待核验）",
     "site_type": "河口滩涂湿地/省级重要湿地建设区域",
-    "months": [11, 12, 1, 2],
+    "months": [
+      11,
+      12,
+      1,
+      2
+    ],
     "best_time_of_day": "日出前后和低干扰时段；潮位与岸线安全待核验",
     "difficulty": "入门到进阶（按开放岸线）",
     "duration": "半日；分区步行距离待核验",
@@ -59,6 +93,14 @@
     "transport_status": "待核验",
     "hours_status": "待核验",
     "tide_status": "待核验",
-    "source_ids": ["hzzx-2022-12-07", "hznews-2024-12-05", "biodiversity-science-2013", "forestry-gov-2024", "wetland-law-2021"]
+    "source_ids": [
+      "hzzx-2022-12-07",
+      "hznews-2024-12-05",
+      "biodiversity-science-2013",
+      "forestry-gov-2024",
+      "wetland-law-2021"
+    ],
+    "master_source": "hz-qiantang-hangzhou-bay.json",
+    "html_generated_by": "scripts/render-guide.mjs"
   }
 ]

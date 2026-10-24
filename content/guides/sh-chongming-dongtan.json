@@ -1,0 +1,550 @@
+{
+  "schema_version": "1.1",
+  "article_id": "sh-chongming-dongtan",
+  "slug": "shanghai-chongming-dongtan",
+  "title": "崇明东滩｜先确认开放规则，再看潮间带候鸟",
+  "region": "上海·崇明区",
+  "site": "崇明东滩鸟类国家级自然保护区（公众科普教育基地及管理方指定范围）",
+  "site_type": "河口潮汐湿地/自然保护区",
+  "summary": "给第一次去崇明东滩的人一条先确认、后出发的半日框架；公众活动只覆盖科普基地、场馆和工作人员引导范围。",
+  "status": "待核验",
+  "last_checked_at": "2026-10-01",
+  "next_review_at": "2026-11-01",
+  "freshness_class": "seasonal",
+  "copyright": "原创编辑整理；外部资料保留原权利，仅链接与摘要引用；未使用来源图片，外部图片使用前须取得许可。",
+  "location": {
+    "canonical_name": "崇明东滩鸟类国家级自然保护区",
+    "aliases": [
+      "崇明东滩",
+      "东滩保护区"
+    ],
+    "administrative_area": "上海市崇明区",
+    "coordinate_policy": "不公开敏感巢址、夜栖点或可绕过管制的精确坐标"
+  },
+  "decision": {
+    "audience": "亲子、第一次看水鸟、希望在讲解和木栈道观察之间建立基础识别框架的人。",
+    "months": [
+      10,
+      11,
+      12,
+      1,
+      2,
+      3
+    ],
+    "season_note": "10—3 月可作为迁徙/越冬资料窗口；迁徙抵达和历史记录不等于当天鸟况。",
+    "best_time_of_day": "以预约时段和现场引导为准；日出前后只是自然观察建议。",
+    "difficulty": "入门（预约制）",
+    "duration": "半日建议；历史公告曾写单次约 1.5 小时，当前时长待核验。",
+    "value": "先在科普场馆理解河口湿地与候鸟，再在开放木栈道或工作人员引导范围内远距离观察。",
+    "go_no_go": [
+      "预约、开放范围、报到/接驳、天气和现场边界中有一项未确认，就不把保护区当作自由进入的普通公园。",
+      "当天不得把历史公告、旧路线或长期鸟种记录写成当前入口、班次或必见鸟种。"
+    ]
+  },
+  "conditions": [
+    {
+      "id": "public_scope",
+      "label": "公众可进入范围",
+      "value": "科普教育基地、场馆及管理方指定范围；保护区其他区域不能自由进入。",
+      "status": "待核验",
+      "source_ids": [
+        "sh-green-2024-08-31",
+        "cm-gov-2024-10-17"
+      ],
+      "source_date": "2024-08-31",
+      "retrieved_at": "2026-10-01",
+      "valid_until": "当前预约与边界须出行前复核",
+      "confidence": "high",
+      "needs_review": true
+    },
+    {
+      "id": "reservation",
+      "label": "预约与开放时段",
+      "value": "历史公告有 2025 五一安排，当前预约入口、名额和时段未确认。",
+      "status": "待核验",
+      "source_ids": [
+        "shanghai-gov-2025-04-29"
+      ],
+      "source_date": "2025-04-29",
+      "retrieved_at": "2026-10-01",
+      "valid_until": "仅原公告日期有效；当前不可沿用",
+      "confidence": "medium",
+      "needs_review": true
+    },
+    {
+      "id": "shuttle",
+      "label": "接驳与报到",
+      "value": "历史公告提到长江路访客中心和接驳；当前报到位置、证件和接驳时刻待确认。",
+      "status": "待核验",
+      "source_ids": [
+        "shanghai-gov-2025-04-29",
+        "cm-gov-2024-10-17"
+      ],
+      "source_date": "2025-04-29",
+      "retrieved_at": "2026-10-01",
+      "valid_until": "出行前复核",
+      "confidence": "medium",
+      "needs_review": true
+    },
+    {
+      "id": "transport",
+      "label": "公共交通、自驾与停车",
+      "value": "本批资料未确认可靠班次、停车容量或步行距离。",
+      "status": "待核验",
+      "source_ids": [],
+      "source_date": "unknown（未取得来源）",
+      "retrieved_at": "2026-10-01",
+      "valid_until": "每次出行前",
+      "confidence": "low",
+      "needs_review": true
+    },
+    {
+      "id": "weather",
+      "label": "潮汐、天气与关闭",
+      "value": "未提供潮窗；历史公告提示雷雨、大风等极端天气可能关闭。",
+      "status": "待核验",
+      "source_ids": [
+        "shanghai-gov-2025-04-29",
+        "wetland-law-2021"
+      ],
+      "source_date": "2025-04-29",
+      "retrieved_at": "2026-10-01",
+      "valid_until": "当天公告与现场判断",
+      "confidence": "medium",
+      "needs_review": true
+    },
+    {
+      "id": "fee",
+      "label": "门票与服务",
+      "value": "历史公告曾写科普基地免费；当前饮水、洗手间和费用待确认。",
+      "status": "待核验",
+      "source_ids": [
+        "shanghai-gov-2025-04-29"
+      ],
+      "source_date": "2025-04-29",
+      "retrieved_at": "2026-10-01",
+      "valid_until": "当前公告为准",
+      "confidence": "low",
+      "needs_review": true
+    },
+    {
+      "id": "bird_news",
+      "label": "当天鸟讯",
+      "value": "没有实时鸟讯接口；长期记录和迁徙线索不代表当天可见。",
+      "status": "待核验",
+      "source_ids": [
+        "cm-gov-2025-05-04",
+        "cm-gov-2024-10-17"
+      ],
+      "source_date": "2025-05-04",
+      "retrieved_at": "2026-10-01",
+      "valid_until": "当天鸟讯需另行取得带日期公开记录",
+      "confidence": "medium",
+      "needs_review": true
+    }
+  ],
+  "route": {
+    "preflight": [
+      {
+        "step": 1,
+        "action": "保存预约凭证并确认当天开放范围、报到位置、证件要求和接驳安排。",
+        "evidence_ids": [
+          "shanghai-gov-2025-04-29",
+          "sh-green-2024-08-31"
+        ]
+      },
+      {
+        "step": 2,
+        "action": "查天气和管理方关闭通知；雷雨、大风或关闭时取消，不转向保护区禁入区域。",
+        "evidence_ids": [
+          "shanghai-gov-2025-04-29",
+          "wetland-law-2021"
+        ]
+      },
+      {
+        "step": 3,
+        "action": "准备双筒望远镜、防风防晒外层、防滑鞋和饮水；不带诱鸟音、无人机或强光。",
+        "evidence_ids": [
+          "wetland-law-2021"
+        ]
+      }
+    ],
+    "stops": [
+      {
+        "order": 1,
+        "name": "科普教育基地与场馆",
+        "access": "按预约和工作人员安排报到；不将保护区内部当作公众入口。",
+        "observe": "先看申遗、湿地生态和鸟类识别内容，记下当天讲解员提示的安全边界。",
+        "boundary": "不自行寻找内部滩涂、巢址或夜栖点。",
+        "evidence_ids": [
+          "sh-green-2024-08-31",
+          "cm-gov-2024-10-17"
+        ]
+      },
+      {
+        "order": 2,
+        "name": "工作人员引导的木栈道/观察区",
+        "access": "仅在管理方指定的开放木栈道或观察区活动。",
+        "observe": "从远处观察觅食和飞行，记录时间、天气、鸟类行为和观察距离。",
+        "boundary": "不越过围栏、标识或工作人员设定的边界。",
+        "evidence_ids": [
+          "cm-gov-2024-10-17",
+          "wetland-law-2021"
+        ]
+      },
+      {
+        "order": 3,
+        "name": "复盘与离场",
+        "access": "沿开放路线返回，不向保护区其他区域延伸。",
+        "observe": "把实见、历史资料和来源日期分栏记录；当天未见不代表不存在。",
+        "boundary": "开放取消时直接离开，不寻找替代绕行入口。",
+        "evidence_ids": [
+          "cm-gov-2025-05-04",
+          "wetland-law-2021"
+        ]
+      }
+    ],
+    "abort_conditions": [
+      "雷雨、大风或能见度下降",
+      "管理方关闭、预约失效或工作人员要求撤离",
+      "鸟群反复警戒、起飞或人员拥挤",
+      "无法确认安全边界或接驳安排"
+    ]
+  },
+  "timeline": [
+    {
+      "phase": "出发前",
+      "relative_time": "T-1 天至出发前",
+      "action": "核验预约、开放范围、天气、接驳、费用和当天管理通知。",
+      "stop_rule": "关键字段未确认则取消现场路线。"
+    },
+    {
+      "phase": "报到",
+      "relative_time": "抵达后",
+      "action": "按要求报到，完成科普场馆和安全说明，确认今日可走范围。",
+      "stop_rule": "无法确认边界时只做公开资料学习。"
+    },
+    {
+      "phase": "观察段",
+      "relative_time": "开放引导时段内",
+      "action": "在木栈道/指定点位保持安静，用望远镜观察远处活动并记录行为。",
+      "stop_rule": "触发任一撤离条件立即返回。"
+    },
+    {
+      "phase": "离开前",
+      "relative_time": "结束观察时",
+      "action": "清点垃圾和器材，保存观察日期与来源；开放取消不改走禁入区域。",
+      "stop_rule": "不把历史信息补写成实时路线事实。"
+    }
+  ],
+  "habitats": [
+    {
+      "name": "河口潮间带",
+      "relationship": "潮汐塑造水鸟觅食和停歇空间；公开木栈道只观察管理方允许的远处区域。",
+      "signals": [
+        "潮线变化",
+        "鸻鹬觅食",
+        "雁鸭群体移动"
+      ],
+      "source_ids": [
+        "cm-gov-2024-10-17",
+        "cm-gov-2025-05-04"
+      ],
+      "confidence": "medium"
+    },
+    {
+      "name": "科普基地与木栈道",
+      "relationship": "把场馆学习与开放步道观察连接起来；不代表保护区全部开放。",
+      "signals": [
+        "远距离飞行",
+        "觅食行为",
+        "讲解员提示的生境边界"
+      ],
+      "source_ids": [
+        "sh-green-2024-08-31",
+        "cm-gov-2024-10-17"
+      ],
+      "confidence": "high"
+    },
+    {
+      "name": "迁徙/越冬湿地",
+      "relationship": "季节资料支持迁徙与越冬价值，不能替代当天鸟讯。",
+      "signals": [
+        "季节性群体",
+        "水面与滩涂转换"
+      ],
+      "source_ids": [
+        "cm-gov-2025-05-04",
+        "cm-gov-2024-10-17"
+      ],
+      "confidence": "medium"
+    }
+  ],
+  "targets": [
+    {
+      "group": "长期记录/迁徙线索",
+      "items": [
+        "东方白鹳",
+        "小天鹅",
+        "白头鹤",
+        "黑脸琵鹭"
+      ],
+      "evidence_level": "保护区长期记录和公开报道",
+      "claim": "旧稿称东滩历年记录鸟类 300 多种，其中国家一级重点保护鸟类 19 种、二级 59 种；这些是带日期的历史统计，不是当天可见清单，数字需复核。",
+      "source_ids": [
+        "cm-gov-2025-05-04"
+      ]
+    },
+    {
+      "group": "入门生境类群",
+      "items": [
+        "鸻鹬类",
+        "雁鸭类",
+        "鹤类",
+        "鸥类",
+        "鹭类"
+      ],
+      "evidence_level": "自然教育公开资料",
+      "claim": "用于按生境建立观察框架，不承诺具体物种。",
+      "source_ids": [
+        "cm-gov-2023-04-18"
+      ]
+    },
+    {
+      "group": "当天鸟讯",
+      "items": [],
+      "evidence_level": "缺少实时来源",
+      "claim": "不发布“今天必见”或某点位必有某鸟的说法。",
+      "source_ids": [],
+      "needs_review": true
+    }
+  ],
+  "safety": {
+    "rules": [
+      "不进入禁入区、繁殖区、核心休息区或未开放滩涂。",
+      "不追逐、不投喂、不播放诱鸟音、不使用无人机或强光惊扰鸟群。",
+      "不跨越围栏、不采集羽毛或其他自然物，不捕捉或带走野生动物。",
+      "保持与鸟群的安全距离，为鸟群保留退路。",
+      "不公开敏感巢址、夜栖点、GPS 或绕过管制的方法。"
+    ],
+    "risks": [
+      "潮汐与泥滩湿滑",
+      "木栈道和水边失足",
+      "雷雨、大风与能见度变化",
+      "长时间暴晒和缺水"
+    ],
+    "legal_basis": "遵守湿地保护法和自然保护区管理要求；现场工作人员指令优先。",
+    "source_ids": [
+      "wetland-law-2021"
+    ]
+  },
+  "sources": [
+    {
+      "id": "cm-gov-2024-10-17",
+      "type": "崇明区政府/自然教育报道",
+      "title": "崇明东滩科普场馆、接驳与木栈道公开报道",
+      "url": "https://www.shcm.gov.cn/xwzx/002003/20241017/46d85659-ad1e-4ca2-b40f-1e8cdb7740a4.html",
+      "published_at": "2024-10-17",
+      "retrieved_at": "2026-10-01",
+      "valid_until": "历史开放信息；当前安排须复核",
+      "excerpt": "提供场馆预约、接驳和木栈道历史公开信息。",
+      "confidence": "medium",
+      "copyright": "公开网页，仅链接引用",
+      "needs_review": true,
+      "retrieval_note": "继承原 Markdown 检索记录；本轮未重新访问该网页",
+      "evidence_roles": [
+        "ecology"
+      ]
+    },
+    {
+      "id": "shanghai-gov-2025-04-29",
+      "type": "上海市政府公告/管理规则",
+      "title": "崇明东滩 2025 五一开放与预约公告",
+      "url": "https://www.shanghai.gov.cn/nw17239/20250429/4b0a924b951648729afde7033c0bfc52.html",
+      "published_at": "2025-04-29",
+      "retrieved_at": "2026-10-01",
+      "valid_until": "仅 2025-05-01—05-05 有效；不可替代当前公告",
+      "excerpt": "提供历史预约时段、报到、接驳和极端天气处理。",
+      "confidence": "medium",
+      "copyright": "政府公开公告，链接引用",
+      "needs_review": true,
+      "retrieval_note": "继承原 Markdown 检索记录；本轮未重新访问该网页",
+      "evidence_roles": [
+        "management"
+      ]
+    },
+    {
+      "id": "sh-green-2024-08-31",
+      "type": "上海市绿化市容咨询答复/管理边界",
+      "title": "保护区与科普基地公众进入边界答复",
+      "url": "https://web.lhsr.sh.gov.cn/sites/ShanghaiGreen/dyn/zixuntousu_content_jyh.aspx?ctgId=7ef3f3a8-bb3c-4bd3-a610-769bca20a818&infId=5dfb834c-325f-41eb-ac9b-b40f7c1e27cf",
+      "published_at": "2024-08-31",
+      "retrieved_at": "2026-10-01",
+      "valid_until": "历史政策背景；当前预约须复核",
+      "excerpt": "说明保护区不可自由进入，公众入口受管理。",
+      "confidence": "high",
+      "copyright": "政府公开答复，链接引用",
+      "needs_review": true,
+      "retrieval_note": "继承原 Markdown 检索记录；本轮未重新访问该网页",
+      "evidence_roles": [
+        "management"
+      ]
+    },
+    {
+      "id": "cm-gov-2025-05-04",
+      "type": "崇明区政府/自然教育报道",
+      "title": "崇明东滩环志与长期鸟种记录报道",
+      "url": "https://www.shcm.gov.cn/xwzx/002003/20250504/86ff9153-7620-4fc9-ab56-6c98422b51e7.html",
+      "published_at": "2025-05-04",
+      "retrieved_at": "2026-10-01",
+      "valid_until": "区域长期/季节性背景；不支撑当天鸟讯",
+      "excerpt": "提供 300 多种长期记录和迁徙背景。",
+      "confidence": "medium",
+      "copyright": "公开网页，仅链接引用",
+      "needs_review": true,
+      "retrieval_note": "继承原 Markdown 检索记录；本轮未重新访问该网页",
+      "evidence_roles": [
+        "ecology"
+      ]
+    },
+    {
+      "id": "wetland-law-2021",
+      "type": "国家法律法规",
+      "title": "中华人民共和国湿地保护法",
+      "url": "https://www.gov.cn/xinwen/2021-12/24/content_5664406.htm",
+      "published_at": "2021-12-27",
+      "retrieved_at": "2026-10-01",
+      "valid_until": "法规以现行文本为准",
+      "excerpt": "用于安全距离、保护边界和禁止行为。",
+      "confidence": "high",
+      "copyright": "政府公开法规文本，链接引用",
+      "needs_review": true,
+      "retrieval_note": "继承原 Markdown 检索记录；本轮未重新访问该网页",
+      "evidence_roles": [
+        "management"
+      ]
+    },
+    {
+      "id": "cm-gov-2023-04-18",
+      "type": "崇明区政府/自然教育报道",
+      "evidence_roles": [
+        "ecology"
+      ],
+      "title": "崇明东滩自然教育与生境类群报道",
+      "url": "https://www.shcm.gov.cn/xwzx/002003/20230418/e1373a3d-7413-481c-9326-e6db8a619590.html",
+      "published_at": "2023-04-18",
+      "retrieved_at": "2026-10-01",
+      "valid_until": "历史自然教育背景；不支撑当天鸟讯",
+      "excerpt": "既有稿用于鸻鹬、雁鸭、鹤、鸥、鹭类的入门生境分类。",
+      "confidence": "medium",
+      "copyright": "公开网页，仅链接引用",
+      "needs_review": true,
+      "retrieval_note": "继承原 Markdown 检索记录；本轮未重新访问该网页"
+    }
+  ],
+  "qa": {
+    "review_status": "待核验",
+    "reviewer": "Codex automated pass",
+    "reviewed_at": "2026-10-01",
+    "next_action": "补齐当前预约、开放、接驳、交通、潮汐和费用来源；人工复核后再考虑 ready_for_review。",
+    "review_notes": [
+      "管理/法规与生态/观察来源已交叉，历史公告不支撑当前承诺。",
+      "长期鸟种记录与当天鸟讯已分栏。",
+      "HTML 由本 JSON 母版生成，更新须重新生成并跑 QA。",
+      "既有编辑源转换，本轮没有重新检索原网页；检索日期继承旧稿，来源内容需人工复核。"
+    ],
+    "unrun_checks": [
+      "当前开放/交通/潮汐在线核验",
+      "现场路线与人工复核",
+      "浏览器视口和视觉检查"
+    ]
+  },
+  "provenance": {
+    "imported_from": "shanghai-chongming-dongtan.md",
+    "source_verification": "既有编辑源转换，本轮没有重新检索原网页；检索日期继承旧稿，来源内容需人工复核。",
+    "baseline_commit": "08516ce"
+  },
+  "generation_plan": {
+    "audience": {
+      "value": "亲子、第一次看水鸟、希望在讲解和木栈道观察之间建立基础识别框架的人。",
+      "status": "known"
+    },
+    "season_window": {
+      "value": [
+        10,
+        11,
+        12,
+        1,
+        2,
+        3
+      ],
+      "status": "needs_review"
+    },
+    "canonical_place": {
+      "value": "崇明东滩鸟类国家级自然保护区",
+      "status": "known"
+    },
+    "open_boundary": {
+      "value": "只覆盖当天确认开放的管理范围",
+      "status": "needs_review"
+    },
+    "route_stops": {
+      "value": [
+        "科普教育基地与场馆",
+        "工作人员引导的木栈道/观察区",
+        "复盘与离场"
+      ],
+      "status": "needs_review"
+    },
+    "timeline": {
+      "value": [
+        "出发前",
+        "报到",
+        "观察段",
+        "离开前"
+      ],
+      "status": "known"
+    },
+    "habitat_questions": {
+      "value": [
+        "河口潮间带",
+        "科普基地与木栈道",
+        "迁徙/越冬湿地"
+      ],
+      "status": "known"
+    },
+    "target_taxa": {
+      "value": [
+        "长期记录/迁徙线索",
+        "入门生境类群",
+        "当天鸟讯"
+      ],
+      "status": "needs_review"
+    },
+    "live_fields": {
+      "value": [
+        "public_scope",
+        "reservation",
+        "shuttle",
+        "transport",
+        "weather",
+        "fee",
+        "bird_news"
+      ],
+      "status": "needs_review"
+    },
+    "safety_gates": {
+      "value": [
+        "雷雨、大风或能见度下降",
+        "管理方关闭、预约失效或工作人员要求撤离",
+        "鸟群反复警戒、起飞或人员拥挤",
+        "无法确认安全边界或接驳安排"
+      ],
+      "status": "known"
+    },
+    "source_gaps": {
+      "value": "补齐当前预约、开放、接驳、交通、潮汐和费用来源；人工复核后再考虑 ready_for_review。",
+      "status": "unknown"
+    }
+  }
+}

@@ -1,0 +1,200 @@
+{
+  "schema_version": "sightings.mvp.v1",
+  "generated_at": "2026-10-14",
+  "data_status": "演示数据，待现场核验",
+  "coordinate_policy": "地图只显示区域级示意点；不保存或公开珍稀鸟、巢址和夜栖点的精确坐标。",
+  "records": [
+    {
+      "id": "demo-cm-black-faced-spoonbill",
+      "species": "黑脸琵鹭",
+      "scientific_name": "Platalea minor",
+      "observed_at": "2026-10-12",
+      "published_at": "2026-10-13",
+      "observer": "WildLog 演示录入",
+      "source": "公开资料线索 + 编辑演示记录",
+      "source_url": "https://www.shcm.gov.cn/xwzx/002003/20250504/86ff9153-7620-4fc9-ab56-6c98422b51e7.html",
+      "source_title": "崇明东滩环志与长期鸟种记录报道",
+      "location": {
+        "region": "上海",
+        "place": "崇明东滩开放科普区域",
+        "granularity": "区域级",
+        "coordinate_system": "GCJ-02（仅作区域示意）",
+        "precision": "约 5 km",
+        "coordinates": null
+      },
+      "map_point": {"x": 21, "y": 31},
+      "evidence": {
+        "status": "待核验",
+        "audit_status": "未完成人工复核",
+        "level": "公开资料线索，不代表当天实见",
+        "note": "本条用于演示鸟讯字段与交互；出行前需重新取得可核验的当天观察来源。"
+      },
+      "notes": "河口潮间带候鸟示例。不要据此判断当天必见。",
+      "route": {
+        "provider": "amap_uri",
+        "destination_keyword": "崇明东滩科普教育基地",
+        "entry_label": "打开高德路线入口（无密钥演示）"
+      }
+    },
+    {
+      "id": "demo-cm-egret",
+      "species": "白鹭",
+      "scientific_name": "Ardeidae sp.",
+      "observed_at": "2026-10-10",
+      "published_at": "2026-10-11",
+      "observer": "WildLog 演示录入",
+      "source": "公开资料线索 + 编辑演示记录",
+      "source_url": "https://www.shcm.gov.cn/xwzx/002003/20230418/e1373a3d-7413-481c-9326-e6db8a619590.html",
+      "source_title": "崇明东滩自然教育与生境类群报道",
+      "location": {
+        "region": "上海",
+        "place": "崇明东滩科普教育基地周边",
+        "granularity": "区域级",
+        "coordinate_system": "GCJ-02（仅作区域示意）",
+        "precision": "约 5 km",
+        "coordinates": null
+      },
+      "map_point": {"x": 24, "y": 36},
+      "evidence": {
+        "status": "待核验",
+        "audit_status": "未完成人工复核",
+        "level": "公开资料线索，不代表当天实见",
+        "note": "常见鸟种也需区分历史记录与当天观察。"
+      },
+      "notes": "适合作为入门识别练习的演示条目。",
+      "route": {
+        "provider": "amap_uri",
+        "destination_keyword": "崇明东滩科普教育基地",
+        "entry_label": "打开高德路线入口（无密钥演示）"
+      }
+    },
+    {
+      "id": "demo-tiaozini-avocet",
+      "species": "反嘴鹬",
+      "scientific_name": "Recurvirostra avosetta",
+      "observed_at": "2026-10-11",
+      "published_at": "2026-10-12",
+      "observer": "WildLog 演示录入",
+      "source": "公开资料线索 + 编辑演示记录",
+      "source_url": "https://wap.yancheng.gov.cn/art/2026/5/9/art_45136_4424125.html",
+      "source_title": "盐城市政府公开的条子泥鸟类监测与繁殖季报道",
+      "location": {
+        "region": "江苏",
+        "place": "东台条子泥公开观察区域",
+        "granularity": "区域级",
+        "coordinate_system": "GCJ-02（仅作区域示意）",
+        "precision": "约 8 km",
+        "coordinates": null
+      },
+      "map_point": {"x": 42, "y": 45},
+      "evidence": {
+        "status": "待核验",
+        "audit_status": "未完成人工复核",
+        "level": "公开资料线索，不代表当天实见",
+        "note": "720 高地、川水湾等名称不等于当天开放边界。"
+      },
+      "notes": "用来演示潮线与候鸟观察语境；不提供下滩或接近鸟群的路线。",
+      "route": {
+        "provider": "amap_uri",
+        "destination_keyword": "东台条子泥湿地",
+        "entry_label": "打开高德路线入口（无密钥演示）"
+      }
+    },
+    {
+      "id": "demo-tiaozini-redshank",
+      "species": "红嘴鸥",
+      "scientific_name": "Chroicocephalus ridibundus",
+      "observed_at": "2026-10-06",
+      "published_at": "2026-10-07",
+      "observer": "WildLog 演示录入",
+      "source": "公开资料线索 + 编辑演示记录",
+      "source_url": "https://www.mee.gov.cn/home/ztbd/2021/mlhwyxalzjhd/algs/jss/202109/t20210906_900030.shtml",
+      "source_title": "条子泥保护修复与湿地公园公开案例",
+      "location": {
+        "region": "江苏",
+        "place": "东台条子泥湿地公园公开区域",
+        "granularity": "区域级",
+        "coordinate_system": "GCJ-02（仅作区域示意）",
+        "precision": "约 8 km",
+        "coordinates": null
+      },
+      "map_point": {"x": 45, "y": 49},
+      "evidence": {
+        "status": "待核验",
+        "audit_status": "未完成人工复核",
+        "level": "公开资料线索，不代表当天实见",
+        "note": "保护修复案例不能直接替代当天鸟讯来源。"
+      },
+      "notes": "示例条目强调来源分层，历史或生态资料不能当作实况。",
+      "route": {
+        "provider": "amap_uri",
+        "destination_keyword": "东台条子泥湿地公园",
+        "entry_label": "打开高德路线入口（无密钥演示）"
+      }
+    },
+    {
+      "id": "demo-qiantang-stilt",
+      "species": "黑翅长脚鹬",
+      "scientific_name": "Himantopus himantopus",
+      "observed_at": "2026-10-08",
+      "published_at": "2026-10-09",
+      "observer": "WildLog 演示录入",
+      "source": "公开资料线索 + 编辑演示记录",
+      "source_url": "https://hznews.hangzhou.com.cn/chengshi/content/2024-12/05/content_8821896_0.htm",
+      "source_title": "钱塘江沿岸芦苇湿地与常见鸟类报道",
+      "location": {
+        "region": "浙江",
+        "place": "钱塘江沿岸开放岸线（区域级）",
+        "granularity": "区域级",
+        "coordinate_system": "GCJ-02（仅作区域示意）",
+        "precision": "约 6 km",
+        "coordinates": null
+      },
+      "map_point": {"x": 63, "y": 63},
+      "evidence": {
+        "status": "待核验",
+        "audit_status": "未完成人工复核",
+        "level": "公开资料线索，不代表当天实见",
+        "note": "钱塘区、钱塘江沿岸与宁波杭州湾湿地不是同一入口。"
+      },
+      "notes": "路线只指向开放岸线搜索入口，不默认任何堤岸都可进入。",
+      "route": {
+        "provider": "amap_uri",
+        "destination_keyword": "钱塘江沿岸观鸟",
+        "entry_label": "打开高德路线入口（无密钥演示）"
+      }
+    },
+    {
+      "id": "demo-qiantang-shelduck",
+      "species": "赤麻鸭",
+      "scientific_name": "Tadorna ferruginea",
+      "observed_at": "2026-10-03",
+      "published_at": "2026-10-04",
+      "observer": "WildLog 演示录入",
+      "source": "公开资料线索 + 编辑演示记录",
+      "source_url": "https://www.biodiversity-science.net/CN/10.3724/SP.J.1003.2013.10213",
+      "source_title": "杭州湾及钱塘江河口南岸滨海湿地鸟类群落调查",
+      "location": {
+        "region": "浙江",
+        "place": "杭州湾北岸湿地区域",
+        "granularity": "区域级",
+        "coordinate_system": "GCJ-02（仅作区域示意）",
+        "precision": "约 10 km",
+        "coordinates": null
+      },
+      "map_point": {"x": 69, "y": 58},
+      "evidence": {
+        "status": "待核验",
+        "audit_status": "未完成人工复核",
+        "level": "历史调查线索，不代表当天实见",
+        "note": "学术调查可支撑生境背景，不能替代当天观测。"
+      },
+      "notes": "展示历史调查与实时鸟讯分层。",
+      "route": {
+        "provider": "amap_uri",
+        "destination_keyword": "杭州湾湿地公园",
+        "entry_label": "打开高德路线入口（无密钥演示）"
+      }
+    }
+  ]
+}
